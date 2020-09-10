@@ -1,0 +1,132 @@
+[
+  {
+    "type": "mongodb",
+    " datatset": [
+      {
+        "command": "mongodump",
+        "dbconfig": [
+          {
+            "host": "192.168.100.39",
+            "port": "3309",
+            "username": "sysmod",
+            "password": "Yggadmin61",
+            "database": "admin",
+            "path": "../backup/dds/mongo/admin",
+            "filename": "2020-08-10-08-15-30",
+            "maximum_file": 50,
+            "time_schedule": {
+              "days": 0,
+              "hours": 0,
+              "minutes": 30,
+              "seconds": 0
+            }
+          },
+          {
+            "host": "192.168.100.49",
+            "port": "3309",
+            "username": "sysmod",
+            "password": "Yggadmin61",
+            "database": "users",
+            "path": "../backup/yggdev/mongo/users",
+            "filename": "2020-08-10-08-15-30",
+            "maximum_file": 50,
+            "time_schedule": {
+              "days": 0,
+              "hours": 1,
+              "minutes": 30,
+              "seconds": 0
+            }
+          }
+        ]
+      },
+      {
+        "command": "mongorestore",
+        "dbconfig": [
+          {
+            "host": "192.168.100.39",
+            "port": "3309",
+            "username": "sysmod",
+            "password": "Yggadmin61",
+            "database": "admin",
+            "path": "../backup/dds/mongo/admin",
+            "filename": "2020-08-10-08-15-30"
+          },
+          {
+            "host": "192.168.100.49",
+            "port": "3309",
+            "username": "sysmod",
+            "password": "Yggadmin61",
+            "database": "users",
+            "path": "../backup/yggdev/mongo/admin",
+            "filename": "2020-08-10-08-15-30"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "mariadb",
+    " datatset": [
+      {
+        "command": "mysqldump",
+        "dbconfig": [
+          {
+            "host": "192.168.100.40",
+            "port": "3306",
+            "username": "root",
+            "password": "Mr289@dbygg",
+            "database": "admin",
+            "path": "../backup/rds/maria/admin",
+            "filename": "2020-08-10-08-15-30",
+            "maximum_file": 50,
+            "time_schedule": {
+              "days": 0,
+              "hours": 0,
+              "minutes": 30,
+              "seconds": 0
+            }
+          },
+          {
+            "host": "192.168.100.49",
+            "port": "3306",
+            "username": "root",
+            "password": "Mr289@dbygg",
+            "database": "users",
+            "path": "../backup/yggdev/maria/users",
+            "filename": "2020-08-10-08-15-30",
+            "maximum_file": 50,
+            "time_schedule": {
+              "days": 0,
+              "hours": 1,
+              "minutes": 30,
+              "seconds": 0
+            }
+          }
+        ]
+      },
+      {
+        "command": "mysqlstore",
+        "dbconfig": [
+          {
+            "host": "192.168.100.40",
+            "port": "3306",
+            "username": "root",
+            "password": "Mr289@dbygg",
+            "database": "admin",
+            "path": "../backup/rds/maria/admin",
+            "filename": "2020-08-10-08-15-30"
+          },
+          {
+            "host": "192.168.100.49",
+            "port": "3306",
+            "username": "root",
+            "password": "Mr289@dbygg",
+            "database": "users",
+            "path": "../backup/yggdev/maria/admin",
+            "filename": "2020-08-10-08-15-30"
+          }
+        ]
+      }
+    ]
+  }
+]
