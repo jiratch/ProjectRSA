@@ -1,0 +1,74 @@
+[
+  {
+    "dbs": [
+      {
+        "type": "mongodb",
+        "host": "192.168.100.39",
+        "port": "3309",
+        "username": "sysmod",
+        "password": "Yggadmin61",
+        "path": "../backup/dds/mongodb",
+        "filename": "2020-08-10-08-15-30",
+        "maximum_file": 50,
+        "time_schedule": {
+          "days": 0,
+          "hours": 0,
+          "minutes": 30,
+          "seconds": 0
+        }
+      },
+      {
+        "type": "mongodb",
+        "host": "192.168.100.49",
+        "port": "3309",
+        "username": "sysmod",
+        "password": "Yggadmin61",
+        "path": "../backup/yggdev/mongodb",
+        "filename": "2020-08-10-08-15-30",
+        "maximum_file": 50,
+        "time_schedule": {
+          "days": 0,
+          "hours": 1,
+          "minutes": 30,
+          "seconds": 0
+        }
+      }
+    ]
+  },
+  {
+    "dbs": [
+      {
+        "type": "mariadb",
+        "host": "192.168.100.40",
+        "port": "3306",
+        "username": "root",
+        "password": "Mr289@dbygg",
+        "path": "../backup/rds/mariadb",
+        "filename": "2020-08-10-08-15-30",
+        "maximum_file": 50,
+        "time_schedule": {
+          "days": 0,
+          "hours": 0,
+          "minutes": 30,
+          "seconds": 0
+        }
+      },
+      {
+        "type": "mariadb",
+        "host": "192.168.100.49",
+        "port": "3306",
+        "username": "root",
+        "password": "Mr289@dbygg",
+        "path": "../backup/yggdev/mariadb",
+        "filename": "2020-08-10-08-15-30",
+        "maximum_file": 50,
+        "time_schedule": {
+          "days": 0,
+          "hours": 1,
+          "minutes": 30,
+          "seconds": 0
+        }
+      }
+    ]
+  }
+]
